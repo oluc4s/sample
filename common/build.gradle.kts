@@ -59,7 +59,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 from (components["release"])
                 groupId = "com.github.oluc4s"
-                artifactId = "sample"
+                artifactId = "common"
                 version = "1.0"
             }
         }
