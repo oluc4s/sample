@@ -53,12 +53,15 @@ dependencies {
     implementation(libs.androidx.material3)
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.oluc4s"
-            artifactId = "sample"
-            version = "1.0"
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["release"])
+                groupId = "com.github.oluc4s"
+                artifactId = "sample"
+                version = "1.0"
+            }
         }
     }
 }
