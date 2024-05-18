@@ -56,10 +56,9 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.s2start.common"
-            artifactId = "common"
+            groupId = "com.github.oluc4s"
+            artifactId = "sample"
             version = "1.0"
-
         }
     }
 }
